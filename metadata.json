@@ -1,0 +1,5 @@
+{
+  "name": "Image Compressor Pro",
+  "description": "A modern, fast, and intuitive image size compressor. Upload your JPG, PNG, or WebP images, choose a compression level, see a live before/after comparison, and download the optimized result. All processing is done securely in your browser.",
+  "requestFramePermissions": []
+}
