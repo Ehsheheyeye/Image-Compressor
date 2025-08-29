@@ -14,65 +14,32 @@
         -moz-osx-font-smoothing: grayscale;
       }
       /* Custom scrollbar for a more premium feel */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #1e293b; /* slate-800 */
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #475569; /* slate-600 */
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #64748b; /* slate-500 */
-      }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #1e293b; }
+      ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #64748b; }
       /* Custom range slider style */
       input[type="range"] {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 100%;
-        height: 8px;
-        background: #334155; /* slate-700 */
-        border-radius: 4px;
-        outline: none;
-        opacity: 0.7;
+        -webkit-appearance: none; appearance: none;
+        width: 100%; height: 8px;
+        background: #334155; border-radius: 4px;
+        outline: none; opacity: 0.7;
         transition: opacity .2s;
       }
-      input[type="range"]:hover {
-        opacity: 1;
-      }
+      input[type="range"]:hover { opacity: 1; }
       input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 20px;
-        height: 20px;
-        background: #7c3aed; /* violet-600 */
-        cursor: pointer;
-        border-radius: 50%;
-        border: 2px solid #e2e8f0; /* slate-200 */
+        -webkit-appearance: none; appearance: none;
+        width: 20px; height: 20px;
+        background: #7c3aed; cursor: pointer;
+        border-radius: 50%; border: 2px solid #e2e8f0;
       }
       input[type="range"]::-moz-range-thumb {
-        width: 20px;
-        height: 20px;
-        background: #7c3aed; /* violet-600 */
-        cursor: pointer;
-        border-radius: 50%;
-        border: 2px solid #e2e8f0; /* slate-200 */
+        width: 20px; height: 20px;
+        background: #7c3aed; cursor: pointer;
+        border-radius: 50%; border: 2px solid #e2e8f0;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body class="bg-slate-900 text-slate-200 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] min-h-screen flex items-center justify-center p-4 font-sans">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
